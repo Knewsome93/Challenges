@@ -3,34 +3,49 @@
 <head>
     <title>This is me!</title>
     <style>
+        #THEButton{
+            text-align:center;
+            font-size:100px;
+            border-color: blue;
+            border-radius:25px;
+            border-width:15px;
+            cursor: pointer;
+            margin-top:10px;
+        }
        .headers{
         font-family:'Anton', sans-serif;
+        font-size:40px;
+        margin-bottom:10px;
        }
         *{
-        background-color: darkred;
+        background-color:darkorange;
         font-family: 'EB Garamond', serif;
-        
-        
-       }  
+        color:blue;
+        }  
        p{
         text-indent:15px;
         font-size:larger;
-        
         }
         ul{
             display: flex;
             justify-content:center;
             font-size: 20px;
+            margin-top:5px;
         }
         li{
             margin-right:30px;
         }
         img{
-            height: 400px;
+            height: 350px;
+            margin-bottom:15px;
+        }
+        hr{
+            border-color:blue;
+            border-width:10px;
         }
 
-        
     </style>
+    <script defer src="Challenge4.js"></script>
 </head>
 <h1 align= "center" class="headers">All About Me!</h1>
 <body align= "center">
@@ -46,6 +61,8 @@
      </ul>
      <img src = https://superherojacked.b-cdn.net/wp-content/uploads/2018/07/Goku-Workout-2.jpg 
      alt = "Anime character Goku is training">
+     <hr/>
+     <button id="THEButton">Press Me!</button>
 </body>
 
 
