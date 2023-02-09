@@ -10,3 +10,6 @@ function printAlert(){
     return alert(myList);
 }
 
+let theButton = document.querySelector("#THEButton");
+theButton.addEventListener("click",printAlert);
+
