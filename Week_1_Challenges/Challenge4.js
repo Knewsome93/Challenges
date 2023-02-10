@@ -13,3 +13,13 @@ function printAlert(){
 let theButton = document.querySelector("#THEButton");
 theButton.addEventListener("click",printAlert);
 
+let enterBtn = document.querySelector("#entered");
+let userInput = document.getElementById("THEInput");
+enterBtn.addEventListener("click",addUserInput);
+
+function addUserInput(){
+let newInput = userInput.value;
+add(newInput);
+userInput.value="";
+}
+
