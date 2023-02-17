@@ -11,5 +11,10 @@
     <types>
         <members>Subjects</members>
         <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>Class__c.Subject__c</members>
+        <name>CustomField</name>
+    </types>
     <version>56.0</version> 
 </Package>
