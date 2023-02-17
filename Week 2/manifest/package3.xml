@@ -20,5 +20,9 @@
         <members>Class_Roster__c</members>
         <name>CustomObject</name>
     </types>
+     <types>
+        <members>Class__c.Assigned_Teacher__c</members>
+        <name>CustomField</name>
+    </types>
     <version>56.0</version> 
 </Package>
