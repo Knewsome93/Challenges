@@ -4,5 +4,8 @@
         <members>PathAssistant</members>
         <name>Settings</name>
     </types>
+    <types>
+        <members>Subjects</members>
+        <name>GlobalValueSet</name>
     <version>56.0</version> 
 </Package>
