@@ -5,6 +5,10 @@
         <name>Settings</name>
     </types>
     <types>
+        <members>Challenge_3_Path</members>
+        <name>PathAssistant</name>
+    </types>
+    <types>
         <members>Class__c</members>
         <name>CustomObject</name>
     </types>
@@ -56,6 +60,10 @@
         <members>Class__c-Science</members>
         <members>Class__c-History</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>Class__c.Enroll_Student</members>
+        <name>QuickAction</name>
     </types>
     <version>56.0</version> 
 </Package>
