@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Of_Age</fullName>
+    <active>true</active>
+    <description>Checks to see whether contact is over 10 years old.</description>
+    <errorConditionFormula>10&gt;=(Today()-Birthdate)</errorConditionFormula>
+    <errorDisplayField>Birthdate</errorDisplayField>
+    <errorMessage>Contact is too young. Must be over 10 years old!</errorMessage>
+</ValidationRule>
