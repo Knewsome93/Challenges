@@ -5,6 +5,8 @@
         <members>SOSLChallenges</members>
         <members>DataLord</members>
         <members>DMLChallenges</members>
+        <members>Vehicle</members>
+        <members>Car</members>
         <name>ApexClass</name>
     </types>
     <version>56.0</version> 
