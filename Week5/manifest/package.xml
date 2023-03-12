@@ -7,7 +7,13 @@
         <members>DMLChallenges</members>
         <members>Vehicle</members>
         <members>Car</members>
+        <members>ChallengeHelper</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+    <members>Challenge1And3</members>
+    <members>Challenge2And4</members>
+    <name>ApexTrigger</name>
     </types>
     <version>56.0</version> 
 </Package>
