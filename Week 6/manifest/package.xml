@@ -12,5 +12,9 @@
         <members>ChallengeController</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>ChallengeStyle</members>
+        <name>StaticResource</name>
+    </types>
     <version>56.0</version> 
 </Package>
