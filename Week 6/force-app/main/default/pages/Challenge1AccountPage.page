@@ -1,4 +1,4 @@
-<!-- 
+<!-- Challenge 1 and 2
 <apex:page standardController="Account" recordSetVar="allAccounts">
     <apex:form>
      
@@ -20,13 +20,15 @@
  -->
 <!--Challenge3 and 4-->
 <apex:page controller="ChallengeController">
+    <apex:stylesheet value="{!$Resource.ChallengeStyle}"/>
 	<apex:pageBlock title="The Chosen One">
-    	<apex:pageBlockTable value="{!challengeAccount}" var="chosen">
-            <apex:column value="{!chosen.Name}"/>
-            <apex:column value="{!chosen.AnnualRevenue}"/>
-            <apex:column value="{!chosen.NumberOfEmployees}"/>
-            <apex:column value="{!chosen.Rating}"/>
+    	<apex:pageBlockTable value="{!challengeAccount}" var="chosen" styleClass="Tablestyle">
+            <apex:column style="color: red" value="{!chosen.Name}"/>
+            <apex:column style="color: green" value="{!chosen.AnnualRevenue}"/>
+            <apex:column style="color: blue" value="{!chosen.NumberOfEmployees}"/>
+            <apex:column style="color: purple" value="{!chosen.Rating}"/>
         </apex:pageBlockTable>
-        <apex:outputText value="{!$Label.About_Me}"></apex:outputText>
+        <hr/>
+        <apex:outputText value="{!$Label.About_Me}" styleClass="AboutMe"></apex:outputText>
     </apex:pageBlock>
 </apex:page>

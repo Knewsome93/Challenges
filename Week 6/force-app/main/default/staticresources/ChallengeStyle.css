@@ -1,0 +1,16 @@
+.AboutMe{
+    color: red;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.Tablestyle{
+    	margin:35px;
+    	font-size:25vw
+        background-color: black;
+}
+hr{
+    margin:25px
+    border-width:150px;
+    border-color:red;
+}
+
