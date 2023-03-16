@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>About_Me</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>About Me</shortDescription>
+        <value>My name is Khalil Newsome. I am a native of New Jersey, USA.
+I am a lover of most things anime and love to play video games. Currently
+I am being trained by Revature to be one of the best SalesForce Developers of the 
+land.</value>
+    </labels>
+</CustomLabels>

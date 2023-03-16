@@ -1,18 +1,32 @@
+<!-- 
 <apex:page standardController="Account" recordSetVar="allAccounts">
-    <apex:form >
-       
+    <apex:form>
+     
     <apex:pageBlock title="All Accounts">
         <apex:pageBlockButtons >
             <apex:commandButton action="{!previous}" value="Previous"/>
             <apex:commandButton action="{!next}" value="Next"/>
         </apex:pageBlockButtons>
-             <apex:pageBlockTable value="{!allAccounts}" var="acc">
+             <apex:pageBlockTable value="{!allAccounts}" var ="acc">
             	<apex:column value="{!acc.Name}"/>
             	<apex:column value="{!acc.NumberOfEmployees}"/>
             	<apex:column value="{!acc.AnnualRevenue}"/>
         	</apex:pageBlockTable>
        
     </apex:pageBlock>
-            
+          
     </apex:form>
+</apex:page>
+ -->
+<!--Challenge3 and 4-->
+<apex:page controller="ChallengeController">
+	<apex:pageBlock title="The Chosen One">
+    	<apex:pageBlockTable value="{!challengeAccount}" var="chosen">
+            <apex:column value="{!chosen.Name}"/>
+            <apex:column value="{!chosen.AnnualRevenue}"/>
+            <apex:column value="{!chosen.NumberOfEmployees}"/>
+            <apex:column value="{!chosen.Rating}"/>
+        </apex:pageBlockTable>
+        <apex:outputText value="{!$Label.About_Me}"></apex:outputText>
+    </apex:pageBlock>
 </apex:page>

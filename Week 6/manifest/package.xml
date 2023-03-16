@@ -4,5 +4,13 @@
         <members>Challenge1AccountPage</members>
         <name>ApexPage</name>
     </types>
+    <types>
+        <members>About_Me</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
+        <members>ChallengeController</members>
+        <name>ApexClass</name>
+    </types>
     <version>56.0</version> 
 </Package>
