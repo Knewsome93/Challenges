@@ -20,8 +20,15 @@
  -->
 <!--Challenge3 and 4-->
 <apex:page controller="ChallengeController">
+    <!--Challenge 5 styling my page-->
     <apex:stylesheet value="{!$Resource.ChallengeStyle}"/>
+    <apex:form >
 	<apex:pageBlock title="The Chosen One">
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{!changeGreeting}" value="Greeting" reRender="Greet">
+            </apex:commandButton>
+        </apex:pageBlockButtons>
+        <apex:outputText id="Greet" value="{!greeting}"/>
     	<apex:pageBlockTable value="{!challengeAccount}" var="chosen" styleClass="Tablestyle">
             <apex:column style="color: red" value="{!chosen.Name}"/>
             <apex:column style="color: green" value="{!chosen.AnnualRevenue}"/>
@@ -31,4 +38,5 @@
         <hr/>
         <apex:outputText value="{!$Label.About_Me}" styleClass="AboutMe"></apex:outputText>
     </apex:pageBlock>
+    </apex:form>
 </apex:page>
