@@ -18,13 +18,13 @@ public class Challenge7AndMore {
     }
     
     public void displayChosen(){
-        acc=[SELECT Name,AnnualRevenue,Rating, NumberOfEmployees FROM Account WHERE Name=:chosenAcc];
+        acc=[SELECT Name,AnnualRevenue,Rating, NumberOfEmployees,(SELECT Name FROM Contacts) FROM Account WHERE Name=:chosenAcc];
     }
     
-    public Account getChosenAccount(){
+   /* public Account getChosenAccount(){
         acc=[SELECT Name,AnnualRevenue,Rating, NumberOfEmployees FROM Account WHERE Name=:chosenAcc];
         return acc;
-    }
+    }*/
     
     public Boolean getAccountSelected(){
         if(!(acc==null)){
