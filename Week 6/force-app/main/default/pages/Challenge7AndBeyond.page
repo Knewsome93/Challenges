@@ -1,0 +1,17 @@
+<apex:page controller="Challenge7AndMore" >
+    <apex:form >
+    	<apex:pageBlock title="Select an Account" tabStyle="Account">
+            <apex:SelectList value="{!chosenAcc}" size="1">
+                <apex:selectOptions value="{!AccountOptions}"/>
+                <apex:actionSupport event="onchange" action="{!displayChosen}" Rerender="AccountInfo"/>
+    		</apex:SelectList>
+            <apex:pageBlockSection id="AccountInfo" title="AccountDetails">
+                <apex:outputfield value="{!acc.Name}" rendered="{!AccountSelected}"/>
+                <apex:outputfield value="{!acc.AnnualRevenue}" rendered="{!AccountSelected}"/>
+                <apex:outputfield value="{!acc.NumberOfEmployees}" rendered="{!AccountSelected}"/>
+                <apex:outputfield value="{!acc.Rating}" rendered="{!AccountSelected}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:detail rendered="{!AccountSelected}"/>
+</apex:page>
