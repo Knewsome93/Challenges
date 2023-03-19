@@ -1,0 +1,15 @@
+<apex:page controller="Challenge9Controller">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:SelectList value="{!accountName}" size="1">
+                <apex:selectOptions value="{!AccChoices}"/>
+                <apex:actionSupport event="onchange" action="{!addChosen}" reRender="AccountsDisplay"/>
+            </apex:SelectList>
+            <apex:pageBlockSection title="Chosen Accounts">
+            	<apex:dataTable id="AcccountsDisplay" value="{!chosenAccs}" var="account">
+                    <apex:column value="{!account.Name}" rendered="{!AccountAdded}"/>
+                </apex:dataTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+   	</apex:form>
+</apex:page>
