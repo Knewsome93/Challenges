@@ -3,6 +3,7 @@
     <types>
         <members>Challenge1AccountPage</members>
         <members>Challenge7AndBeyond</members>
+        <members>Challenge9</members>
         <name>ApexPage</name>
     </types>
     <types>
@@ -12,6 +13,7 @@
     <types>
         <members>ChallengeController</members>
         <members>Challenge7AndMore</members>
+        <members>Challenge9Controller</members>
         <name>ApexClass</name>
     </types>
     <types>
