@@ -1,0 +1,14 @@
+<apex:page Controller="Challenge9Controller">
+    <apex:pageBlock >
+       <table>
+  <apex:repeat value="{!accs}" var="acc">
+    <tr>
+      <td><apex:outputText value="{!acc.Name}"/></td>
+      <apex:repeat value="{!acc.Contacts}" var="cont">
+         <td><apex:outputText value="{!cont.Name}"/>,</td>
+      </apex:repeat>
+    </tr>
+  </apex:repeat>
+</table>
+    </apex:pageBlock>
+</apex:page>
