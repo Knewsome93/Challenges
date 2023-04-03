@@ -3,7 +3,7 @@ public class Challenge9Controller {
     public List<Account> accs{get;set;}
     public List<String> accName{get;set;}
     public String accountName{get;set;}
-    public List<Account> chosenAccs;
+    public List<Account> chosenAccs{get;set;}
     public Account accountToAdd;
     
     public Challenge9Controller(){
@@ -23,13 +23,25 @@ public class Challenge9Controller {
     
     public void addChosen(){
         accName.add(accountName);
-    }
-    
-    public void chosenAccountstoDisplay(){
         for(String acc: accName){
-            accountToAdd = [SELECT Name FROM Account WHERE Name=:acc LIMIT 1];
+            accountToAdd = [SELECT Name,(SELECT Name FROM Contacts) FROM Account WHERE Name=:acc LIMIT 1];
             chosenAccs.add(accountToAdd);
         }
+    }
+    
+    public List<Account> getChosenAccountstoDisplay(){
+        for(String acc: accName){
+            accountToAdd = [SELECT Name,(SELECT Name FROM Contacts) FROM Account WHERE Name=:acc LIMIT 1];
+            chosenAccs.add(accountToAdd);
+        }
+        return chosenAccs;
+    }
+    
+    public Boolean getAccountAdded(){
+        if(!(chosenAccs==null)){
+            return true;
+        }
+        return false;
     }
     
     
