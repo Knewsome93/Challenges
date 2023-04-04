@@ -1,0 +1,9 @@
+<template>
+    <h1>{headerinfo}</h1>
+    <lightning-button label="Change Header" title="Non-primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <template if:true={showButton}>
+        <div>
+            <lightning-input label="Header Info Change" data-id="input"  value={headerinfo} onchange={headerChange} ></lightning-input>
+        </div>
+    </template>
+</template>
