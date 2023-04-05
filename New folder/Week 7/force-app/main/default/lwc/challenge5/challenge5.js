@@ -9,4 +9,11 @@ export default class Challenge5 extends LightningElement {
         image:'https://townsquare.media/site/366/files/2014/12/Linkin-Park.jpg?w=980&q=75'},
         {name:'Avenged Sevenfold', description:'Avenged Sevenfold is an American heavy metal band from Huntington Beach, California, formed in 1999. ',
          image:'https://cdn.mos.cms.futurecdn.net/93HmtAv7PTcbwGcKsWMuof-1200-80.jpg'},];
+
+         chosenband;
+        displayinfo=false;
+        
+         handleClick(event){
+            this.displayinfo=!this.displayinfo;
+         }
 }

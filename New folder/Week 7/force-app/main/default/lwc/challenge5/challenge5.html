@@ -1,5 +1,19 @@
 <template>
-    <template for:each={bands} for:item="band">
-        <c-challenge-5-child band={band} key={band.name}></c-challenge-5-child>
-    </template>
+    <div class="slds-grid slds-gutters">
+        <div class= "slds-col">
+            <template for:each={bands} for:item="band">
+                <c-challenge-5-child band={band} key={band.name} onselect={bandChosen}></c-challenge-5-child>
+            </template>
+        </div>
+        <div class= "slds-col">
+            <lightning-button label="Learn More" class="slds-m-vertical_x-small" onclick={handleClick}></lightning-button>
+        </div>
+       <div if:true={displayinfo} class= "slds-col">
+        
+            <template for:each={bands} for:item="band2">
+            <c-challenge-5sidebar key={band2.name} bandinfo={band2}></c-challenge-5sidebar>
+       
+        </template>
+        </div>
+    </div>
 </template>
