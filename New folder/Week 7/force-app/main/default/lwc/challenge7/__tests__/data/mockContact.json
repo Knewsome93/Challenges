@@ -1,0 +1,42 @@
+{
+    "apiName": "Contact",
+    "childRelationships": {},
+    "eTag": "8a4024bad0c5743bfbd66fb5e9fe7663",
+    "fields": {
+      "Email": {
+        "displayValue": null,
+        "value": "a_young@dickenson.com"
+      },
+      "EmailBouncedReason": {
+        "displayValue": null,
+        "value": null
+      },
+      "Id": {
+        "displayValue": null,
+        "value": "003Dn00000DLjT3IAL"
+      },
+      "Name": {
+        "displayValue": null,
+        "value": "Andy Young"
+      },
+      "Phone": {
+        "displayValue": null,
+        "value": "(785) 241-6200"
+      },
+      "SystemModstamp": {
+        "displayValue": "2/14/2023, 1:12 PM",
+        "value": "2023-02-14T21:12:43.000Z"
+      },
+      "Title": {
+        "displayValue": null,
+        "value": "SVP, Operations"
+      }
+    },
+    "id": "003Dn00000DLjT3IAL",
+    "lastModifiedById": "005Dn000006ZMbRIAW",
+    "lastModifiedDate": "2023-02-14T21:12:43.000Z",
+    "recordTypeId": "012000000000000AAA",
+    "recordTypeInfo": null,
+    "systemModstamp": "2023-02-14T21:12:43.000Z",
+    "weakEtag": 1676409163000
+  }

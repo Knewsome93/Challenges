@@ -1,9 +1,8 @@
 import { LightningElement,api, wire } from "lwc";
 import { getRecord, getFieldValue } from "lightning/uiRecordApi";
 import CONTACT_NAME_FIELD from "@salesforce/schema/Contact.Name";
-import CONTACT_TITLE_FIELD from '@salesforce/schema/Contact.TITLE';
-import CONTACT_PHONE_FIELD from '@salesforce/schema/Contact.PHONE';
-import CONTACT_OBJECT from '@salesforce/schema/Contact';
+import CONTACT_TITLE_FIELD from '@salesforce/schema/Contact.Title';
+import CONTACT_PHONE_FIELD from '@salesforce/schema/Contact.Phone';
 
 
 export default class Challenge7 extends LightningElement {
